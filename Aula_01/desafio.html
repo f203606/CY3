@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Validação</title>
+</head>
+<body>
+    <h1>Formulário de Validação</h1>
+    
+    <form id="formulario">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        
+        <button type="button" onclick="validarFormulario()">Enviar</button>
+    </form>
+
+    <script>
+        // Função para validar o formulário
+        function validarFormulario() {
+            const nome = document.getElementById('nome').value;
+            const email = document.getElementById('email').value;
+
+            // Validar nome - não deve conter caracteres especiais
+            const nomeValido = /^[a-zA-Z\s]+$/.test(nome);
+
+            // Validar email com a máscara: contexto@email
+            const emailValido = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email);
+
+            if (!nomeValido) {
+                console.log("Nome inválido! O nome não pode conter caracteres especiais.");
+            } else if (!emailValido) {
+                console.log("Email inválido! O email deve seguir o formato: contexto@email.");
+            } else {
+                console.log("Dados válidos! Formulário enviado com sucesso.");
+            }
+        }
+    </script>
+</body>
+</html>

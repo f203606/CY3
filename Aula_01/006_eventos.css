@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+body {
+    background: rgb(0, 0, 0);
+    background-image: url('rpg.jpg');
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.434);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+section div input {
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+div#caixaMisteriosa {
+    background-color: black;
+    width: 100px;
+    height: 100px;
+}

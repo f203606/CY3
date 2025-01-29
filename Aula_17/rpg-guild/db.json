@@ -1,0 +1,19 @@
+{
+  "guilds": [
+    {
+      "id": "d61d",
+      "name": "INT1-0001"
+    }
+  ],
+  "members": [
+    {
+      "id": "2077",
+      "name": "Joãozinho"
+    },
+    {
+      "id": "3799",
+      "name": "Joãozinho",
+      "guildId": "d61d"
+    }
+  ]
+}

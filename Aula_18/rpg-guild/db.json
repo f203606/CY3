@@ -1,0 +1,25 @@
+{
+  "guilds": [
+    {
+      "id": "1018",
+      "name": "BAS1-0002"
+    }
+  ],
+  "members": [
+    {
+      "id": "57fc",
+      "name": "André",
+      "guildId": "1018"
+    },
+    {
+      "id": "c0ff",
+      "name": "Pedro",
+      "guildId": "1018"
+    },
+    {
+      "id": "6b50",
+      "name": "João",
+      "guildId": "1018"
+    }
+  ]
+}
